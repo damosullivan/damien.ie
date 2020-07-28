@@ -1,0 +1,38 @@
+{
+  "name": "damien.ie",
+  "scripts": {
+    "start": "docsify start . -c ssr.config.js",
+    "deploy": "now -p"
+  },
+  "files": [
+    "docs"
+  ],
+  "docsify": {
+    "config": {
+      "alias": {
+        "/projects/1note-me": "https://raw.githubusercontent.com/damosullivan/1note.me/master/README.md"
+      },
+      "auto2top": true,
+      "homepage": "home.md",
+      "loadNavbar": true,
+      "loadSidebar": true,
+      "name": "damien.ie",
+      "repo": "",
+      "themeColor": "DodgerBlue",
+      "formatUpdated": "from {DD}/{MM}/{YYYY}"
+    }
+  },
+  "now": {
+    "alias": "docsify",
+    "env": {
+      "NODE_ENV": "production",
+      "DEBUG": "docsify"
+    }
+  },
+  "dependencies": {
+    "docsify-cli": "^4.1.7"
+  },
+  "devDependencies": {
+    "now": "^6.2.0"
+  }
+}
